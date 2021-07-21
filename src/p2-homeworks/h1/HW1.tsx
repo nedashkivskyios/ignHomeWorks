@@ -1,33 +1,49 @@
 import React from 'react'
+import Message from "./Message";
+import AlternativeMessage from "./AlternativeMessage";
 
 const messageData = {
-    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
-    time: '22:00',
+  avatar: 'https://cdn.vox-cdn.com/thumbor/mXo5ObKpTbHYi9YslBy6YhfedT4=/95x601:1280x1460/1200x800/filters:focal(538x858:742x1062)/cdn.vox-cdn.com/uploads/chorus_image/image/66699060/mgidarccontentnick.comc008fa9d_d.0.png',
+  name: 'Some Name',
+  message: 'some textsome textsome textsome text',
+  time: '22:00',
+}
+
+
+const altMessageData = {
+  avatar: 'https://cdn.vox-cdn.com/thumbor/mXo5ObKpTbHYi9YslBy6YhfedT4=/95x601:1280x1460/1200x800/filters:focal(538x858:742x1062)/cdn.vox-cdn.com/uploads/chorus_image/image/66699060/mgidarccontentnick.comc008fa9d_d.0.png',
+  name: 'Alexandr',
+  message: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+  time: new Date().toLocaleTimeString(),
 }
 
 function HW1() {
-    return (
-        <div>
-            <hr/>
-            homeworks 1
+  return (
+    <div>
+      <hr/>
+      homeworks 1
 
-            {/*should work (должно работать)*/}
+      {/*should work (должно работать)*/}
 
-            {/*<Message*/}
-            {/*    avatar={messageData.avatar}*/}
-            {/*    name={messageData.name}*/}
-            {/*    message={messageData.message}*/}
-            {/*    time={messageData.time}*/}
-            {/*/>*/}
+      <Message
+        avatar={messageData.avatar}
+        name={messageData.name}
+        message={messageData.message}
+        time={messageData.time}
+      />
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
-            <hr/>
-        </div>
-    )
+      <hr/>
+      {/*для личного творчества, могу проверить*/}
+
+      <AlternativeMessage
+        avatar={altMessageData.avatar}
+        name={altMessageData.name}
+        message={altMessageData.message}
+        time={altMessageData.time}
+      />
+      <hr/>
+    </div>
+  )
 }
 
 export default HW1

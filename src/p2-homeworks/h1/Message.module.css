@@ -1,3 +1,77 @@
 .message {
+    width: 300px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
 
+}
+
+.avatar {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.messageWrapper {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.messageWrapper:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid black;
+    left: -10px;
+    bottom: 0;
+}
+
+.messageTextWrapper {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.name {
+    color: blueviolet;
+}
+
+.messageText {
+    padding-top: 5px;
+    color: antiquewhite;
+    max-width: 300px;
+    display: table-caption;
+    white-space: normal;
+    padding-bottom: 5px;
+}
+
+
+
+
+.time {
+    display: flex;
+    flex: 0 0 25px;
+    align-items: flex-end;
+    color:darkslategray;
+    padding-bottom: 3px;
 }
