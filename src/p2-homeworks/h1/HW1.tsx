@@ -20,10 +20,7 @@ const altMessageData = {
 function HW1() {
   return (
     <div>
-      <hr/>
       homeworks 1
-
-      {/*should work (должно работать)*/}
 
       <Message
         avatar={messageData.avatar}
@@ -32,16 +29,12 @@ function HW1() {
         time={messageData.time}
       />
 
-      <hr/>
-      {/*для личного творчества, могу проверить*/}
-
       <AlternativeMessage
         avatar={altMessageData.avatar}
         name={altMessageData.name}
         message={altMessageData.message}
         time={altMessageData.time}
       />
-      <hr/>
     </div>
   )
 }

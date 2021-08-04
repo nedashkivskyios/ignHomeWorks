@@ -1,0 +1,32 @@
+.navBar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.navBarItem {
+    border: 1px solid gray;
+    display: flex;
+    width: 50px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--mainColorText);
+}
+
+.navBarItem:hover {
+    background-color: orange;
+}
+
+.active {
+    background-color: #fc7c21;
+    color: white;
+    border: #fc7c21;
+}
+
+
+
