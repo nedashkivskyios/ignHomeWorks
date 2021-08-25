@@ -12,7 +12,7 @@ function Message(props: MessagePropsType) {
   return (
     <div className={styles.message}>
       <div className={styles.avatar}>
-        <img src={props.avatar} alt="avatar" />
+        <img src={props.avatar} alt="avatar"/>
       </div>
       <div className={styles.messageWrapper}>
         <div className={styles.messageTextWrapper}>

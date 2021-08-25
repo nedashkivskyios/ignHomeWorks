@@ -7,11 +7,13 @@ import HW4 from '../../h4/HW4'
 function PreJunior() {
     return (
         <div>
-            <HW1/>
-            <HW2/>
-            <HW3/>
-            <HW4/>
-            {/*<HW6/>*/}
+          {/*// файл в "../../p1-main/m1-ui/u1-app/pages"*/}
+
+            {/*<HW1/>*/}
+            {/*<HW2/>*/}
+            {/*<HW3/>*/}
+            {/*<HW4/>*/}
+            {/*/!*<HW6/>*!/*/}
 
         </div>
     )

@@ -1,5 +1,5 @@
 .default {
-    border: 1px solid  var(--accentColor);
+    border: 1px solid var(--accentColor);
     display: flex;
     width: auto;
     height: 25px;
@@ -23,10 +23,10 @@
 
 .errorButton {
     margin: 2px;
-    border: 1px solid  var(--errorBackgroundColor);
+    border: 1px solid var(--errorBackgroundColor);
     display: flex;
     width: auto;
-    height: auto;
+    height: 25px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;

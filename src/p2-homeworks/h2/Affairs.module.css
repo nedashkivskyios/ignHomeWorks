@@ -1,8 +1,8 @@
-    .affairs {
-        display: inline-flex;
-    }
+.affairs {
+    display: inline-flex;
+}
 
-    .affair {
-        display: flex;
-        align-items: center;
-    }
+.affair {
+    display: flex;
+    align-items: center;
+}

@@ -1,12 +1,12 @@
 import React from 'react'
 
 function Header() {
-    return (
-        <div>
-            // add NavLinks
+  return (
+    <div>
+      {/*//всё перенес в // файл в "../../p1-main/m1-ui/u1-app/"*/}
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Header
