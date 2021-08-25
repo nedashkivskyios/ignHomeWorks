@@ -9,7 +9,7 @@ type GreetingContainerPropsType = {
 
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
   const [name, setName] = useState<string>('')
-  const [error, setError] = useState<string>('Error! Input require text')
+  const [error, setError] = useState<string>('Error! Enter text!')
 
   const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
     let enteredText = e.currentTarget.value
@@ -19,7 +19,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
       setError('')
     } else {
       setName('')
-      setError('Error! Input require text')
+      setError('Error! Enter text!')
     }
   }
   const addUser = () => {

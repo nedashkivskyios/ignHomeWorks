@@ -1,22 +1,35 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #e2e2e2;
+
     /*main color variables*/
-    --mainColorText: #230734;
+    --darkPrimaryColor: #C2185B;
+    --defaultPrimaryColor: #E91E63;
+    --lightPrimaryColor: #F8BBD0;
+    --textPrimaryColor: #FFFFFF;
+    --accentColor: #009688;
+    --primaryTextColor: #212121;
+    --secondaryTextColor: #757575;
+    --dividerColor: #BDBDBD;
+    --errorColorText: #c10d0d;
+    --errorBackgroundColor: #d74a5c;
+    --errorBorderColor: #ff0000;
 }
 
 .App {
+    border: 2px solid var(--accentColor);
+    border-radius: 5px;
     width: 999px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ghostwhite;
-    box-shadow: 5px 5px 20px 1px gray,
-                -5px 5px 20px 1px gray,
-                5px -5px 20px 1px gray,
-                -5px -5px 20px 1px gray;
+    background-color: white;
+    box-shadow: 5px 5px 20px 1px #57a59e,
+    -5px 5px 20px 1px #57a59e,
+    5px -5px 20px 1px #57a59e,
+    -5px -5px 20px 1px #57a59e;
 }
 
 .appTitle {
@@ -25,18 +38,21 @@ html, body {
     flex: 0 0 auto;
     justify-content: center;
     align-items: center;
-    color: var(--mainColorText);
-    border-bottom: 1px solid gray;
+    color: var(--accentColor);
+    border-bottom: 1px solid var(--darkPrimaryColor);
 }
 
 .appNavbar {
     width: 100%;
     display: flex;
     flex: 0 0 auto;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--darkPrimaryColor);
+    margin-bottom: 10px;
 }
 
 .appContent {
     display: flex;
     flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
 }

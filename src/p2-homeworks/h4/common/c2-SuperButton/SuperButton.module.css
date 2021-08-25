@@ -1,7 +1,41 @@
 .default {
-
+    border: 1px solid  var(--accentColor);
+    display: flex;
+    width: auto;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    background-color: var(--accentColor);
+    margin: 2px;
 }
 
-.red {
-    background: red;
+.default:hover, .default:focus {
+    color: var(--textPrimaryColor);
 }
+
+.default:disabled {
+    color: var(--secondaryTextColor);
+    background-color: #67d0c6;
+}
+
+.errorButton {
+    margin: 2px;
+    border: 1px solid  var(--errorBackgroundColor);
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primaryTextColor);
+    background: var(--errorBackgroundColor);
+}
+
+.errorButton:hover, .errorButton:focus {
+    color: var(--textPrimaryColor)
+}
+

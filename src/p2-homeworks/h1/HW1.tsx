@@ -20,15 +20,12 @@ const altMessageData = {
 function HW1() {
   return (
     <div>
-      homeworks 1
-
       <Message
         avatar={messageData.avatar}
         name={messageData.name}
         message={messageData.message}
         time={messageData.time}
       />
-
       <AlternativeMessage
         avatar={altMessageData.avatar}
         name={altMessageData.name}

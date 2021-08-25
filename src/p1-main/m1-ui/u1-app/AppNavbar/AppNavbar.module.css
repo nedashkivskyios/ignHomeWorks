@@ -4,10 +4,11 @@
     flex-direction: row;
     padding: 10px;
     justify-content: space-around;
+
 }
 
 .navBarItem {
-    border: 1px solid gray;
+    border: 1px solid  var(--accentColor);
     display: flex;
     width: 50px;
     height: 25px;
@@ -15,17 +16,23 @@
     align-items: center;
     border-radius: 5px;
     text-decoration: none;
-    color: var(--mainColorText);
+    color: var(--accentColor);
 }
 
 .navBarItem:hover {
-    background-color: orange;
+    color: var(--defaultPrimaryColor);
+    border: 1px solid  var(--accentColor);
 }
 
 .active {
-    background-color: #fc7c21;
+    background-color: var(--defaultPrimaryColor);
     color: white;
-    border: #fc7c21;
+    border: 1px solid  var(--defaultPrimaryColor)
+}
+.active:hover {
+    background-color: var(--defaultPrimaryColor);
+    color: white;
+    border: 1px solid  var(--defaultPrimaryColor)
 }
 
 

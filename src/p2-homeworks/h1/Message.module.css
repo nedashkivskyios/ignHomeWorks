@@ -26,7 +26,7 @@
     padding-left: 10px;
     margin-left: 10px;
     padding-right: 10px;
-    background-color: black;
+    background-color: var(--lightPrimaryColor);
     border-radius: 10px 10px 10px 10px;
     position: relative;
 }
@@ -37,9 +37,9 @@
     height: 0;
     position: absolute;
     border-left: 10px solid transparent;
-    border-right: 10px solid black;
+    border-right: 10px solid var(--lightPrimaryColor);
     border-top: 10px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid var(--lightPrimaryColor);
     left: -10px;
     bottom: 0;
 }
@@ -53,12 +53,12 @@
 }
 
 .name {
-    color: blueviolet;
+    color: var(--accentColor);
 }
 
 .messageText {
     padding-top: 5px;
-    color: antiquewhite;
+    color: var(--primaryTextColor);
     max-width: 300px;
     display: table-caption;
     white-space: normal;
@@ -72,6 +72,6 @@
     display: flex;
     flex: 0 0 25px;
     align-items: flex-end;
-    color:darkslategray;
+    color: var(--secondaryTextColor);
     padding-bottom: 3px;
 }

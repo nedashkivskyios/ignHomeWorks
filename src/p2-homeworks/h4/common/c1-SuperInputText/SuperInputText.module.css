@@ -1,12 +1,16 @@
 .superInput {
-
+    border: 2px solid var(--accentColor);
+    border-radius: 2px;
+    margin: 2px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 2px solid var(--errorBorderColor);
+    background: #eeadad;
+    border-radius: 2px;
+    margin: 2px;
 }
 
 .error {
-    color: red;
+    color: var(--errorColorText);
 }
