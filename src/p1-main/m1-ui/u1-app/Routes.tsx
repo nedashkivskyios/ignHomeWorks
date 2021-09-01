@@ -6,6 +6,8 @@ import HW1 from "../../../p2-homeworks/h1/HW1";
 import HW2 from "../../../p2-homeworks/h2/HW2";
 import HW3 from "../../../p2-homeworks/h3/HW3";
 import HW4 from "../../../p2-homeworks/h4/HW4";
+import HW6 from "../../../p2-homeworks/h6/HW6";
+import HW7 from "../../../p2-homeworks/h7/HW7";
 
 export const PATH = {
   PRE_JUNIOR: '/pre-junior',
@@ -13,6 +15,8 @@ export const PATH = {
   HW2: '/homeworktwo',
   HW3: '/homeworkthree',
   HW4: '/homeworkfour',
+  HW6: '/homeworksix',
+  HW7: '/homeworkseven'
 }
 
 function Routes() {
@@ -26,9 +30,10 @@ function Routes() {
         <Route path={PATH.HW2} render={() => <HW2/>}/>
         <Route path={PATH.HW3} render={() => <HW3/>}/>
         <Route path={PATH.HW4} render={() => <HW4/>}/>
+        <Route path={PATH.HW6} render={() => <HW6/>}/>
+        <Route path={PATH.HW7} render={() => <HW7/>}/>
 
         <Route render={() => <Error404/>}/>
-
       </Switch>
     </div>
   )

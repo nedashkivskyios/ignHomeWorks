@@ -1,0 +1,8 @@
+.superSpan {
+    color: var(--primaryTextColor);
+    cursor: pointer;
+}
+
+.superSpan:hover {
+    color: var(--secondaryTextColor);
+}
