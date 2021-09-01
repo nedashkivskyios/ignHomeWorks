@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ignHomeWorks/static/css/main.f8658df9.chunk.css",
-    "main.js": "/ignHomeWorks/static/js/main.9ebd3db2.chunk.js",
-    "main.js.map": "/ignHomeWorks/static/js/main.9ebd3db2.chunk.js.map",
+    "main.css": "/ignHomeWorks/static/css/main.08a40406.chunk.css",
+    "main.js": "/ignHomeWorks/static/js/main.f500af53.chunk.js",
+    "main.js.map": "/ignHomeWorks/static/js/main.f500af53.chunk.js.map",
     "runtime-main.js": "/ignHomeWorks/static/js/runtime-main.0875ef87.js",
     "runtime-main.js.map": "/ignHomeWorks/static/js/runtime-main.0875ef87.js.map",
-    "static/js/2.da1b70f4.chunk.js": "/ignHomeWorks/static/js/2.da1b70f4.chunk.js",
-    "static/js/2.da1b70f4.chunk.js.map": "/ignHomeWorks/static/js/2.da1b70f4.chunk.js.map",
+    "static/js/2.b0c2b665.chunk.js": "/ignHomeWorks/static/js/2.b0c2b665.chunk.js",
+    "static/js/2.b0c2b665.chunk.js.map": "/ignHomeWorks/static/js/2.b0c2b665.chunk.js.map",
     "index.html": "/ignHomeWorks/index.html",
-    "static/css/main.f8658df9.chunk.css.map": "/ignHomeWorks/static/css/main.f8658df9.chunk.css.map",
-    "static/js/2.da1b70f4.chunk.js.LICENSE.txt": "/ignHomeWorks/static/js/2.da1b70f4.chunk.js.LICENSE.txt"
+    "static/css/main.08a40406.chunk.css.map": "/ignHomeWorks/static/css/main.08a40406.chunk.css.map",
+    "static/js/2.b0c2b665.chunk.js.LICENSE.txt": "/ignHomeWorks/static/js/2.b0c2b665.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0875ef87.js",
-    "static/js/2.da1b70f4.chunk.js",
-    "static/css/main.f8658df9.chunk.css",
-    "static/js/main.9ebd3db2.chunk.js"
+    "static/js/2.b0c2b665.chunk.js",
+    "static/css/main.08a40406.chunk.css",
+    "static/js/main.f500af53.chunk.js"
   ]
 }
