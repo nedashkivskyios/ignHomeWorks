@@ -12,7 +12,7 @@ const AppNavbar = () => {
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkfive'}>HW5</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworksix'}>HW6</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkseven'}>HW7</NavLink></div>
-      <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkeight'}>HW8</NavLink></div>
+      <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworheight'}>HW8</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworknine'}>HW9</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkten'}>HW10</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkeleven'}>HW11</NavLink></div>
