@@ -4,9 +4,9 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionTypes): Ar
   switch (action.type) {
     case 'sort': {
       if (action.payload === 'up') {
-        return [...state].sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
+        return [...state].sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
       } else if (action.payload === 'down') {
-        return [...state].sort((a,b) => (a.name < b.name) ? 1 : ((b.name < a.name) ? -1 : 0));
+        return [...state].sort((a, b) => (a.name < b.name) ? 1 : ((b.name < a.name) ? -1 : 0));
       } else {
         return state
       }

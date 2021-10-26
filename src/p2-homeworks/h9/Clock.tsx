@@ -2,51 +2,75 @@ import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 function Clock() {
-    const [timerId, setTimerId] = useState<number>(0)
-    const [date, setDate] = useState<Date>()
-    const [show, setShow] = useState<boolean>(false)
+  const [timerId, setTimerId] = useState<number>(0)
+  const [date, setDate] = useState<Date>(new Date())
+  const [show, setShow] = useState<boolean>(false)
 
-    const stop = () => {
-        // stop
-    }
-    const start = () => {
-        stop()
-        const id: number = window.setInterval(() => {
-            // setDate
-        }, 1000)
-        setTimerId(id)
-    }
+  const stop = () => {
+    clearInterval(timerId)
+  }
+  const start = () => {
+    const id: number = window.setInterval(() => {
+      console.log('log')
+      setDate(new Date())
+    }, 1000)
+    setTimerId(id)
+  }
 
-    const onMouseEnter = () => {
-        // show
-    }
-    const onMouseLeave = () => {
-        // close
-    }
+  const onMouseEnter = () => {
+    setShow(true)
+  }
+  const onMouseLeave = () => {
+    setShow(false)
+  }
+  let timeToTwoInteger = (time: number) => time < 10 ? `0${time}` : time
 
-    const stringTime = 'Time' // fix with date
-    const stringDate = 'Date' // fix with date
+  enum months {
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "June",
+    "July",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
 
-    return (
+  }
+
+  let hours = timeToTwoInteger(date.getHours())
+  let minutes = timeToTwoInteger(date.getMinutes())
+  let seconds = timeToTwoInteger(date.getSeconds())
+  let day = date.getDay()
+  let month = date.getMonth().toLocaleString()
+  let year = date.getFullYear()
+
+  const stringTime = `${hours}:${minutes}:${seconds}`  // fix with date
+  const stringDate = `${day} ${months[+month]} ${year}` // fix with date
+
+  return (
+    <div>
+      <div
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        {stringTime}
+      </div>
+
+      {show && (
         <div>
-            <div
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-            >
-                {stringTime}
-            </div>
-
-            {show && (
-                <div>
-                    {stringDate}
-                </div>
-            )}
-
-            <SuperButton onClick={start}>start</SuperButton>
-            <SuperButton onClick={stop}>stop</SuperButton>
-
+          {stringDate}
         </div>
-    )
+      )}
+
+      <SuperButton onClick={start}>start</SuperButton>
+      <SuperButton onClick={stop}>stop</SuperButton>
+
+    </div>
+  )
 }
 
 export default Clock
