@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/ignHomeWorks/static/css/main.08a40406.chunk.css",
-    "main.js": "/ignHomeWorks/static/js/main.28464d72.chunk.js",
-    "main.js.map": "/ignHomeWorks/static/js/main.28464d72.chunk.js.map",
+    "main.js": "/ignHomeWorks/static/js/main.0a0d0540.chunk.js",
+    "main.js.map": "/ignHomeWorks/static/js/main.0a0d0540.chunk.js.map",
     "runtime-main.js": "/ignHomeWorks/static/js/runtime-main.0875ef87.js",
     "runtime-main.js.map": "/ignHomeWorks/static/js/runtime-main.0875ef87.js.map",
-    "static/js/2.3a178a85.chunk.js": "/ignHomeWorks/static/js/2.3a178a85.chunk.js",
-    "static/js/2.3a178a85.chunk.js.map": "/ignHomeWorks/static/js/2.3a178a85.chunk.js.map",
+    "static/js/2.8fe1504d.chunk.js": "/ignHomeWorks/static/js/2.8fe1504d.chunk.js",
+    "static/js/2.8fe1504d.chunk.js.map": "/ignHomeWorks/static/js/2.8fe1504d.chunk.js.map",
     "index.html": "/ignHomeWorks/index.html",
     "static/css/main.08a40406.chunk.css.map": "/ignHomeWorks/static/css/main.08a40406.chunk.css.map",
-    "static/js/2.3a178a85.chunk.js.LICENSE.txt": "/ignHomeWorks/static/js/2.3a178a85.chunk.js.LICENSE.txt"
+    "static/js/2.8fe1504d.chunk.js.LICENSE.txt": "/ignHomeWorks/static/js/2.8fe1504d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0875ef87.js",
-    "static/js/2.3a178a85.chunk.js",
+    "static/js/2.8fe1504d.chunk.js",
     "static/css/main.08a40406.chunk.css",
-    "static/js/main.28464d72.chunk.js"
+    "static/js/main.0a0d0540.chunk.js"
   ]
 }
