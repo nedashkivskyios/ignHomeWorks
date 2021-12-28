@@ -3,37 +3,36 @@ import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
 
 function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+  const [value1, setValue1] = useState(10)
+  const [value2, setValue2] = useState(100)
 
-    return (
-        <div>
-            <hr/>
-            homeworks 11
+  const changeRange = (value: number) => {
+    setValue1(value)
+  }
+  const changeDoubleRange = (value1: number, value2: number) => {
+    setValue1(value1)
+    setValue2(value2)
+  }
 
-            {/*should work (должно работать)*/}
-            <div>
-                <span>{value1}</span>
-                <SuperRange
-                    // сделать так чтоб value1 изменялось
-                />
-            </div>
-
-            <div>
-                <span>{value1}</span>
-                <SuperDoubleRange
-                    // сделать так чтоб value1 и value2 изменялось
-                />
-                <span>{value2}</span>
-            </div>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
-            <hr/>
-        </div>
-    )
+  return (
+    <div style={{width: "300px"}}>
+      <div style={{display: "flex", flexDirection: "row", justifyContent: "flex-start"}}>
+        <div style={{marginRight: "15px"}}>{value1}</div>
+        <SuperRange
+          value={value1}
+          onChangeRange={changeRange}
+        />
+      </div>
+      <div style={{display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
+        <div style={{marginRight: "15px"}}>{value1}</div>
+        <SuperDoubleRange
+          value={[value1, value2]}
+          onChangeRange={changeDoubleRange}
+        />
+        <div style={{marginLeft: "15px"}}>{value2}</div>
+      </div>
+    </div>
+  )
 }
 
 export default HW11
