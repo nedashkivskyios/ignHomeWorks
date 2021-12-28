@@ -5,9 +5,11 @@ function Clock() {
   const [timerId, setTimerId] = useState<number>(0)
   const [date, setDate] = useState<Date>(new Date())
   const [show, setShow] = useState<boolean>(false)
+  const [disabler, setDisabler] = useState(false)
 
   const stop = () => {
     clearInterval(timerId)
+    setDisabler(false)
   }
   const start = () => {
     const id: number = window.setInterval(() => {
@@ -15,6 +17,7 @@ function Clock() {
       setDate(new Date())
     }, 1000)
     setTimerId(id)
+    setDisabler(true)
   }
 
   const onMouseEnter = () => {
@@ -66,8 +69,8 @@ function Clock() {
         </div>
       )}
 
-      <SuperButton onClick={start}>start</SuperButton>
-      <SuperButton onClick={stop}>stop</SuperButton>
+      <SuperButton disabled={disabler} onClick={start}>start</SuperButton>
+      <SuperButton disabled={!disabler} onClick={stop}>stop</SuperButton>
 
     </div>
   )
