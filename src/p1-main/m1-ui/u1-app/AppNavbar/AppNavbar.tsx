@@ -17,6 +17,7 @@ const AppNavbar = () => {
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkten'}>HW10</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkeleven'}>HW11</NavLink></div>
       <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworktwelve'}>HW12</NavLink></div>
+      <div><NavLink className={s.navBarItem} activeClassName={s.active} to={'/homeworkthirteen'}>HW13</NavLink></div>
     </div>
   );
 };
